@@ -16,10 +16,10 @@ function App() {
         </p>
         <a
           className='App-link'
-          href='https://reactjs.org'
+          href='https://www.youtube.com/channel/UCxvQ4j_oWcUrUkGbHWs4dLw'
           target='_blank'
           rel='noopener noreferrer'>
-          Learn React
+          Hello youtube!
         </a>
       </header>
     </div>
