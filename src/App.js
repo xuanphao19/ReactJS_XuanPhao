@@ -1,10 +1,11 @@
-import logo from "./logo.svg";
+import logo from "./PhaoThu01.png";
 import "./App.css";
 import {useState} from "react";
 
 function App() {
   const [counter, setCounter] = useState(1);
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.target.classList.toggle("colorRed");
     setCounter(counter + 1);
   };
   return (
