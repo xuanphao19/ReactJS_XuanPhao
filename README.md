@@ -1,4 +1,4 @@
-# Create React App
+# Create React App https://create-react-app-ruby-beta.vercel.app/
 
 This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
 
