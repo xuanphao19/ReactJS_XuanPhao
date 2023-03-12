@@ -26,6 +26,7 @@ function App() {
           className="App-logo"
           alt="logo"
         />
+        <div className="walk1"></div>
         <p>Em là Xuân Pháo.</p>
         <h1>{counter}</h1>
         <ul>
@@ -39,7 +40,6 @@ function App() {
           onChange={(e) => setJob(e.target.value)}
         />
         <button onClick={handleClick}>Click Me</button>
-
         <a
           className="App-link"
           href="https://www.youtube.com/channel/UCxvQ4j_oWcUrUkGbHWs4dLw"
@@ -51,5 +51,5 @@ function App() {
     </div>
   );
 }
-
+// # [Hãy xem Tôi ở đây ](https://fullstack.edu.vn/blog/thuc-hanh-flexbox.html)
 export default App;
