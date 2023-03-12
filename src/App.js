@@ -3,11 +3,21 @@ import "./App.css";
 import {useState} from "react";
 
 function App() {
-  const [counter, setCounter] = useState(1);
+  const [counter, setCounter] = useState(0);
+  const [job, setJob] = useState("");
+  const [jobs, setJobs] = useState([]);
+
   const handleClick = (e) => {
+    let inputEl = document.querySelector("input");
+    inputEl.focus();
     e.target.classList.toggle("colorRed");
-    setCounter(counter + 1);
+    if (job) {
+      setCounter(counter + 1);
+      setJobs((pre) => [...pre, job]);
+      setJob("");
+    }
   };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,11 +26,20 @@ function App() {
           className="App-logo"
           alt="logo"
         />
+        <p>Em là Xuân Pháo.</p>
         <h1>{counter}</h1>
+        <ul>
+          {jobs.map((job, i) => (
+            <li key={i}>{`${i + 1}  ${job}`}</li>
+          ))}
+        </ul>
+        <input
+          placeholder="  Enter name ..."
+          value={job}
+          onChange={(e) => setJob(e.target.value)}
+        />
         <button onClick={handleClick}>Click Me</button>
-        <p>
-          Edit <code>src/App.js</code> Em là Xuân Pháo.
-        </p>
+
         <a
           className="App-link"
           href="https://www.youtube.com/channel/UCxvQ4j_oWcUrUkGbHWs4dLw"
