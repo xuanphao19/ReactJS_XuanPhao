@@ -1,0 +1,64 @@
+:root {
+  font-size: 65.2%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jobList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  min-width: max-content;
+}
+.jobItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  background-color: #e46161;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.13s linear;
+  &:hover {
+    background-color: #123803;
+  }
+}
