@@ -13,6 +13,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  & input {
+    width: 40%;
+  }
 }
 .jobList {
   display: flex;
